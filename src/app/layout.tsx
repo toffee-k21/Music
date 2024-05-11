@@ -16,7 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+      <nav>navbar in layout</nav>
+        {children} 
+        </body>
       {/* page.tsx k andr jo hoga woh as child ishme aayega ( default ) */}
     </html>
   );

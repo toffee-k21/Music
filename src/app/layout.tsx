@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { NavbarDemo } from "@/components/NavBar";
+import { useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,10 +16,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // const [dark,setDark] = useState('')
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <body className={inter.className}>
-      <nav>navbar in layout</nav>
+      <NavbarDemo />
         {children} 
         </body>
       {/* page.tsx k andr jo hoga woh as child ishme aayega ( default ) */}

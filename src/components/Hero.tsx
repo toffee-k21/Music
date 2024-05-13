@@ -1,8 +1,9 @@
 import React from "react";
 import { cn } from "@/utils/cn";
 import { Spotlight } from "./ui/SpotLight";
+import { Button } from "./ui/moving-border";
 
-export function Hero() {
+export function GridBackgroundDemo() {
   return (
     <div className="h-[40rem] w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
       <Spotlight
@@ -19,6 +20,9 @@ export function Hero() {
           section of the page. I don&apos;t know why but I&apos;m running out of
           copy.
         </p>
+        <div className="text-center p-2 m-4">
+        <Button className="text-center py-2 px-4">Contact Us</Button>
+        </div>
       </div>
     </div>
   );

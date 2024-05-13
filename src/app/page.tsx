@@ -1,8 +1,16 @@
 'use client'
 
-import { Hero } from "@/components/Hero";
+import { GridBackgroundDemo } from "@/components/Hero";
 import { AnimatedPinDemo } from "@/components/Pin";
 import { useState } from "react";
+
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
 
 export default function Home() {
   const [darkMode,setDarkMode] = useState<string>('')
@@ -14,13 +22,10 @@ const handleDarkMode =()=> {
   return (
 <>
 {/* <button onClick={handleDarkMode} className=" text-white cursor-pointer">Dark mode</button> */}
-<Hero />
-<div className="flex">
-<AnimatedPinDemo />
-<AnimatedPinDemo />
-<AnimatedPinDemo />
-<AnimatedPinDemo />
-</div>
+<GridBackgroundDemo />
+{/* <div className="w-full
+">
+</div> */}
 </>
   );
 }
